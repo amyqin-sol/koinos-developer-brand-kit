@@ -35,7 +35,7 @@ const Home: NextPage = () => {
       </main>
       <Banner>
         <div className='inline-flex flex-wrap gap-2 text-2xl'>
-            <p>Koinos is the world's first </p>
+            <p>Koinos is the world&#39;s first </p>
             <p className='text-yellow font-bold'>FREE-TO-USE</p>
             <p>blockchain.</p>
             <p>This is a composable UI Kit for Koinos developers built with Tailwind CSS.</p>

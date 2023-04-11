@@ -12,9 +12,9 @@ const Navbar: React.FC<NavbarProps> = ({children}) => {
             <KoinosLogo size="md" />
             <div className="flex gap-4">
             {
-                children.map((child) => {
+                children.map((child, index) => {
                     return (
-                        <div className="tracking-wide font-semibold cursor-pointer hover:text-gray">
+                        <div className="tracking-wide font-semibold cursor-pointer hover:text-gray" key={`div_${index}`}>
                             {child}
                         </div>        
                     )

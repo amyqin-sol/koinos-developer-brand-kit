@@ -15,9 +15,9 @@ const Dropdown: React.FC<DropdownProps> = ({title, children}) => {
                 showDropdown ? (
                     <div className="flex flex-col gap-2 px-8 mt-6 pt-6 pb-4 shadow-xl fixed bg-white order-2">
                         {
-                            children.map((child) => {
+                            children.map((child, index) => {
                                 return (
-                                    <div className="tracking-wide font-semibold cursor-pointer w-32 py-4 px-4 hover:bg-offWhite">
+                                    <div className="tracking-wide font-semibold cursor-pointer w-32 py-4 px-4 hover:bg-offWhite" key={`div_${index}`}>
                                         {child}
                                     </div>        
                                 )   
