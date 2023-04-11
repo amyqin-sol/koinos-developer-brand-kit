@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>Koinos NextJS Brand Kit</title>
+        <title>Koinos Developer Brand Kit</title>
         <link rel='icon' href='https://koinos.io/wp-content/uploads/2021/10/cropped-koinos-mark-square-1024px-32x32.png' />
       </Head>
       <main className='flex flex-row flex-wrap'>
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
             <div className='w-24 flex items-center justify-center rounded-tl-xl rounded-bl-xl text-white h-24 bg-purple'>#7d18f7</div>
             <div className='w-24 flex items-center justify-center text-white h-24 bg-darkPurple'>#10031f</div>
             <div className='w-24 flex items-center justify-center h-24 text-white bg-gray'>#685f71</div>
-            <div className='w-24 flex items-center justify-center h-24 text-white bg-yellow'>#deb37d</div>
+            <div className='w-24 flex items-center justify-center h-24 text-white bg-yellow'>#fdcd21</div>
             <div className='w-24 flex items-center justify-center rounded-tr-xl rounded-br-xl h-24 bg-offWhite'>#f9f9f9</div>
           </div>
           <p className='text-2xl font-bold'>Vertical Component</p>
@@ -96,7 +96,7 @@ const Home: NextPage = () => {
           <div className='flex flex-col flex-wrap gap-4 '>
             <p className='font-bold'>Technology</p>
             <Link href='https://koinos.io/unified-whitepaper/' text='Whitepaper' />
-            <Link href='https://koinos.io/mainnet/' text='Documentation' />
+            <Link href='https://docs.koinos.io/' text='Documentation' />
             <Link href='https://github.com/koinos' text='Github' />
           </div>
           <div className='flex flex-col flex-wrap gap-4 '>
