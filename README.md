@@ -1,34 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Koinos Developer Brand Kit
 
-## Getting Started
+Welcome to the **Koinos Developer Brand Kit!** Koinos is the world's first free-to-use blockchain, designed to provide developers with a powerful and flexible platform for building decentralized applications. 
 
-First, run the development server:
+This brand kit includes all the resources you need to create consistent visuals that represent the Koinos brand. From logos, color palettes, typography, to various dynamic layout components.
 
-```bash
-npm run dev
-# or
-yarn dev
+The font sizes and colors are matched to the Koinos branding. For more information see `tailwind.config.css`
+
+
+## Navbar and Dropdown Components
+The navbar component can be customized to fit your website's needs, making it easy for users to navigate and access important information with regular links and dropdown components.
+```
+<Navbar>
+	<Dropdown title='Dropdown'>
+		<a>Link</a>
+		<a>Link</a>
+	</Dropdown>
+	<a>Link</a>
+	<a>Link</a>
+</Navbar>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Horizontal and Vertical Components
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+These are layout components that take a title prop and children, which are arranged horizontally/vertically.
+```
+<VerticalComponent  title='Koinos Vertical Component'>
+	{children here are arranged vertically}
+</VerticalComponent>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<HorizontalComponent  title='Koinos Horizontal Component'>
+	{children here are arranged horizontally}
+</HorizontalComponent>
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Buttons
+Replace text with the desired button text and onClick with your function.
+```
+<OutlineButton  text='Koinos Button'  onClick={console.log('Clicked')}  />
 
-## Learn More
+<SolidButton  text='Solid Koinos Button'  onClick={console.log('Clicked')}  />
+```
+## Logos
+	
+There are two variations of the logo, `<KoinosLogo>` and `<KoinosLogoWhite>`, 6 preset sizes (xs, sm, md, lg, xl, xxl) and custom size className.
 
-To learn more about Next.js, take a look at the following resources:
+Using pre-sets:
+```
+<KoinosLogo  size='xs | sm | md | lg | xl | xxl'  />
+```
+Custom sizing:
+```
+<KoinosLogoWhite  className='w-full'/>
+```
+## Footer
+Composable horizontal components with `<KoinosLogoWhite>` on the rightmost column.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Links
+Hyperlinks consistent with the Koinos branding. Customize href and text.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+<Link  href="https://koinos.io/"  text='Koinos Link'></Link>
+```
 
-## Deploy on Vercel
+## Input
+Custom input + submit component. Customize the text on the submit button, `buttonText`, the `onSubmit` function, and the `placeholder` for the input field.
+```
+<Input  buttonText='subscribe'  onSubmit={() =>  console.log('Submitted')}  placeholder='email address'  />
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
